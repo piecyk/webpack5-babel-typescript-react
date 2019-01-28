@@ -1,9 +1,12 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
 
-export default function Example() {
+interface Props {
+  initialCounter: number
+}
+
+export default function Example({ initialCounter }: Props) {
   // Declare a new state variable, which we'll call "count"
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(initialCounter)
 
   return (
     <div>

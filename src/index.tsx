@@ -12,7 +12,7 @@ enum Check {
 const Foo = () => (
   <div style={{ fontSize: 24 }}>
     Hello: {Check.Bar} | {add(3, 2)}
-    <Example />
+    <Example initialCounter={2} />
   </div>
 )
 
