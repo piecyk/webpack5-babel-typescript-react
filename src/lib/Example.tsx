@@ -7,6 +7,7 @@ interface Props {
 export default function Example({ initialCounter }: Props) {
   // Declare a new state variable, which we'll call "count"
   const [count, setCount] = useState(initialCounter)
+  console.log('render: ', count)
 
   return (
     <div>

@@ -9,17 +9,21 @@
     "dev": "run-p dev:*",
     "dev:webpack": "webpack-dev-server --mode development --content-base ./site",
     "dev:ts": "tsc --watch --preserveWatchOutput",
-    "build": "yarn run clean && tsc && webpack --mode production"
+    "test": "jest",
+    "build": "yarn run clean && tsc && yarn run test && webpack --mode production"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/plugin-proposal-class-properties": "^7.3.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.3.1",
+    "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.1.0",
+    "@types/jest": "^23.3.13",
     "@types/react": "^16.7.22",
     "@types/react-dom": "^16.0.11",
     "babel-loader": "^8.0.5",
+    "jest": "^24.0.0",
     "npm-run-all": "^4.1.5",
     "typescript": "^3.3.0-rc",
     "webpack": "5.0.0-alpha.9",

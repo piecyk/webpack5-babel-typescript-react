@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import { add } from 'Foo'
+import { sum } from 'Sum'
 import Example from 'lib/Example'
 
 enum Check {
@@ -11,7 +11,7 @@ enum Check {
 
 const Foo = () => (
   <div style={{ fontSize: 24 }}>
-    Hello: {Check.Bar} | {add(3, 2)}
+    Hello: {Check.Bar} | {sum(3, 2)}
     <Example initialCounter={2} />
   </div>
 )
